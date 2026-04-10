@@ -18,7 +18,150 @@
     <title>Быт Под Контролем</title>
   </head>
   <body>
-            <header>
+    <div class="modal">
+      <div class="modal-overlay"></div>
+
+      <div class="modal-box">
+        <!-- LEFT -->
+        <div class="modal-left">
+          <h2>Заказать консультацию</h2>
+          <p>
+            Оставьте заявку и наш менеджер свяжется с вами в ближайшее время
+          </p>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="modal-right">
+          <button class="modal-close">&times;</button>
+
+          <form>
+            <input type="text" placeholder="Ваше имя" required />
+            <input type="tel" placeholder="Телефон" required />
+            <input type="email" placeholder="Email" />
+
+            <textarea placeholder="Комментарий"></textarea>
+
+            <button type="submit" class="submit-btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div id="main-div">
+        <div id="main-button" class="wave open">
+          <svg
+            class="icon-mail"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="28"
+            height="28"
+            x="0"
+            y="0"
+            viewBox="0 0 512.012 512.012"
+            style="enable-background: new 0 0 512 512"
+            xml:space="preserve"
+            class=""
+          >
+            <g>
+              <path
+                d="M333.201 115.038c-28.905-59.021-89.37-98.042-157.193-98.042-97.047 0-176 78.505-176 175 0 26.224 5.63 51.359 16.742 74.794L.299 349.055c-2.094 10.472 7.144 19.728 17.618 17.656l83.279-16.465a172.546 172.546 0 0 0 34.732 12.151c-26.717-126.541 69.199-245.321 197.273-247.359z"
+                fill="#111111"
+                opacity="1"
+                data-original="#111111"
+                class=""
+              ></path>
+              <path
+                d="M495.266 394.79a174.485 174.485 0 0 0 7.511-18.514h-.549c37.448-109.917-41.305-225.441-157.567-231.066l-.005-.018c-100.036-4.61-183.148 75.486-183.148 174.804 0 96.414 78.361 174.857 174.743 174.997 26.143-.035 51.201-5.663 74.568-16.747 91.207 18.032 84.094 16.75 86.189 16.75 9.479 0 16.56-8.686 14.709-17.941z"
+                fill="#111111"
+                opacity="1"
+                data-original="#2e5085"
+                class=""
+              ></path>
+            </g>
+          </svg>
+
+          <svg
+            class="icon-close"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="20"
+            height="20"
+            x="0"
+            y="0"
+            viewBox="0 0 320.591 320.591"
+            style="enable-background: new 0 0 512 512"
+            xml:space="preserve"
+            class=""
+          >
+            <g>
+              <path
+                d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                fill="#333"
+                opacity="1"
+                data-original="#2e5085"
+                class=""
+              ></path>
+              <path
+                d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                fill="#333"
+                opacity="1"
+                data-original="#2e5085"
+                class=""
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <a
+          data-open-modal
+          id="wrapperdown"
+          class="onlineregistration"
+        >
+          Заказать звонок
+        </a>
+        <a
+          class="wrappericon"
+          id="wrapperviber"
+          href=""
+          target="_blank"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 152 152" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><g data-name="Layer 2"><g data-name="12.Viber"><circle cx="76" cy="76" r="76" fill="#665cac" opacity="1" data-original="#665cac" class=""></circle><path fill="#ffffff" d="M84 36H68a28 28 0 0 0-28 28v12a28 28 0 0 0 16 25.31v13.37a1.34 1.34 0 0 0 2.27.94L69.89 104H84a28 28 0 0 0 28-28V64a28 28 0 0 0-28-28zm10.48 52.48-4 4c-4.26 4.17-15.38-.59-25.18-10.6s-14.1-21.24-10-25.41l4-4a4.21 4.21 0 0 1 5.69.06l5.84 6a3.93 3.93 0 0 1-1.6 6.47 3.82 3.82 0 0 0-2.58 4.6c1 4.44 6.64 10 10.84 11.09a4 4 0 0 0 4.67-2.48 3.92 3.92 0 0 1 6.55-1.4l5.83 6a4.2 4.2 0 0 1-.06 5.67zM79.64 55a9.39 9.39 0 0 0-1.19.07 1.33 1.33 0 1 1-.29-2.65 12.23 12.23 0 0 1 1.48-.08A13.35 13.35 0 0 1 93 65.67a12.23 12.23 0 0 1-.08 1.48 1.33 1.33 0 0 1-2.65-.29 11.7 11.7 0 0 0 .07-1.19A10.69 10.69 0 0 0 79.64 55zm8 10.67a1.34 1.34 0 0 1-2.67 0 5.33 5.33 0 0 0-5.33-5.33 1.34 1.34 0 1 1 0-2.67 8 8 0 0 1 8 8zM97.81 70a1.34 1.34 0 1 1-2.6-.62 15.71 15.71 0 0 0 .43-3.69 16 16 0 0 0-16-16H78.4a1.33 1.33 0 0 1-.2-2.66q.72-.06 1.44-.06a18.7 18.7 0 0 1 18.67 18.7 18.94 18.94 0 0 1-.5 4.33z" opacity="1" data-original="#ffffff" class=""></path></g></g></g></svg>
+        </a>
+        <a class="wrappericon" href="" id="wrappertg" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="27"
+            height="27"
+            viewBox="0 0 512 512"
+            fill="#fff
+        "
+          >
+            <path
+              d="M256 0C114.62 0 0 114.62 0 256s114.62 256 256 256 256-114.62 
+                    256-256S397.38 0 256 0zm118.66 174.1c-3.85 40.48-20.52 138.71-29 
+                    184.05-3.59 19.19-10.66 25.62-17.5 26.25-14.86 1.37-26.15-9.83-40.55-19.27-22.53-14.77-35.26-23.96-57.13-38.37-25.28-16.66-8.89-25.81 
+                    5.51-40.77 3.77-3.92 69.27-63.5 70.54-68.9.16-.68.31-3.2-1.19-4.53s-3.71-.87-5.3-.51c-2.26.51-38.26 
+                    24.3-107.98 71.37-10.22 7.02-19.47 10.43-27.77 10.26-9.14-.2-26.72-5.17-39.79-9.42-16.03-5.21-28.77-7.97-27.66-16.82.57-4.61 
+                    6.92-9.32 19.04-14.14 74.63-32.52 124.39-53.95 149.29-64.31 
+                    71.099-29.569 85.87-34.71 95.499-34.88 12.062-.213 14.973 9.743 13.991 19.99z"
+            />
+          </svg>
+        </a>
+        <a
+          class="wrappericon"
+          id="wrappervk"
+          href=""
+          target="_blank"
+        >
+        <img src="/assests/img/maxmessencer.png" alt="">
+        </a>
+        <a class="wrappericon" href="" id="wrappermail" target="_blank">
+          <img src="/assests/img/whatsapp.svg" alt="">
+        </a>
+      </div>
+    </div>
+    <header>
       <div class="header-top">
         <div class="container">
           <div class="header-top-content">
@@ -216,7 +359,7 @@
 
               <li class="dropdown">
                 <a href=""
-                  > Kатегорииr
+                  >Категории
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     version="1.1"
@@ -293,16 +436,15 @@
               <div class="container">
                 <div class="hero-content">
                   <h1 class="hero-title">
-                    Инжиниринговая Группа Компаний «Быт Под Контролем»
+                    «Быт Под Контролем» — ремонт и обслуживание техники
                   </h1>
                   <p class="hero-text">
-                    Инженерные изыскания · Проектирование · Демонтаж ·
-                    Строительно-монтажные работы · Технический заказчик
+                    Электроинструмент · Строительное оборудование ·
+                    Пневматический инструмент · Станки · Садовый инструмент ·
+                    Бензиновый инструмент
                   </p>
                   <a href="" class="view-posts-btn open-modal-btn">
-                    <span class="btn-text"
-                      >Запросить коммерческое предложение</span
-                    >
+                    <span class="btn-text">Оставить заявку</span>
                     <span class="btn-icon">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -329,13 +471,15 @@
               <div class="container">
                 <div class="hero-content">
                   <h1 class="hero-title">
-                    Профессиональные инженерные решения
+                    Ремонт инструмента и бытовые услуги в одном месте
                   </h1>
                   <p class="hero-text">
-                    Проектирование · Монтаж · Обслуживание · Гарантия качества
+                    Ремонт электро- и бензоинструмента · Бытовая и садовая техника
+                    · Сборка мебели · Сантехника и электромонтаж · Ремонт
+                    помещений · Плитка и керамогранит · Клининг
                   </p>
                   <a href="" class="view-posts-btn open-modal-btn">
-                    <span class="btn-text">Связаться с нами</span>
+                    <span class="btn-text">Оставить заявку</span>
                     <span class="btn-icon">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -362,14 +506,15 @@
               <div class="container">
                 <div class="hero-content">
                   <h1 class="hero-title">
-                    Надёжность и качество в каждом проекте
+                    Диагностика, ремонт и гарантия на выполненные работы
                   </h1>
                   <p class="hero-text">
-                    Демонтаж · Строительство · Инженерные сети · Контроль
-                    качества
+                    Работаем с профессиональным инструментом и оборудованием,
+                    берёмся за задачи любой сложности — от сервиса станка до
+                    отделки квартиры и уборки помещений
                   </p>
                   <a href="" class="view-posts-btn open-modal-btn">
-                    <span class="btn-text">Получить консультацию</span>
+                    <span class="btn-text">Оставить заявку</span>
                     <span class="btn-icon">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -394,7 +539,7 @@
       <section class="producs-category section-padding">
         <div class="container">
           <div class="section-title">
-            <h6 class="banner"> Kатегории</h6>
+            <h6 class="banner">Категории</h6>
           </div>
           <div class="product-main-wrapper">
             <div class="product-main-filter">
@@ -416,67 +561,74 @@
               </button>
               <ul class="filter-list">
                 <li data-category="Bütün məhsullar" class="active-item">
-                  <span> Все Kатегорииr </span>
                   <img
-                    src="https://progress-garden.az/assets/img/icons/all.png"
-                    alt="Bütün məhsullar"
-                    width="24px"
-                    height="24px"
+                    src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/grid-3x3-gap-fill.svg"
+                    alt="Все категории"
+                    width="24"
+                    height="24"
+                    class="filter-list-icon"
                   />
+                  <span>Все категории</span>
                 </li>
                 <li data-category="Qartəmizləyən">
-                  <span> Электроинструмент </span>
                   <img
-                    src="https://progress-garden.az/assets/img/icons/all.png"
-                    alt="Bütün məhsullar"
-                    width="24px"
-                    height="24px"
+                    src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/lightning-charge-fill.svg"
+                    alt="Электроинструмент"
+                    width="24"
+                    height="24"
+                    class="filter-list-icon"
                   />
+                  <span>Электроинструмент</span>
                 </li>
                 <li data-category="Golf maşını">
-                  <span> Строительное оборудование </span>
                   <img
-                    src="https://progress-garden.az/assets/img/icons/all.png"
-                    alt="Bütün məhsullar"
-                    width="24px"
-                    height="24px"
+                    src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/bricks.svg"
+                    alt="Строительное оборудование"
+                    width="24"
+                    height="24"
+                    class="filter-list-icon"
                   />
+                  <span>Строительное оборудование</span>
                 </li>
                 <li data-category="Ağac və kollara qulluq">
-                  <span>Пневматический инструмент</span>
                   <img
-                    src="https://progress-garden.az/assets/img/icons/all.png"
-                    alt="Ağac və kollara qulluq"
-                    width="24px"
-                    height="24px"
+                    src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/wind.svg"
+                    alt="Пневматический инструмент"
+                    width="24"
+                    height="24"
+                    class="filter-list-icon"
                   />
+                  <span>Пневматический инструмент</span>
                 </li>
                 <li data-category="Qazona qulluq">
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/gear-wide-connected.svg"
+                    alt="Станки"
+                    width="24"
+                    height="24"
+                    class="filter-list-icon"
+                  />
                   <span>Станки</span>
-                  <img
-                    src="https://progress-garden.az/assets/img/icons/all.png"
-                    alt="Qazona qulluq"
-                    width="24px"
-                    height="24px"
-                  />
                 </li>
                 <li data-category="Suvarma sistemi">
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/tree.svg"
+                    alt="Садовый инструмент"
+                    width="24"
+                    height="24"
+                    class="filter-list-icon"
+                  />
                   <span>Садовый инструмент</span>
-                  <img
-                    src="https://progress-garden.az/assets/img/icons/all.png"
-                    alt="Suvarma sistemi"
-                    width="24px"
-                    height="24px"
-                  />
                 </li>
-                <li data-category="Suvarma sistemi">
-                  <span>Бензиновый инструмент</span>
+                <li data-category="benzin-instrument">
                   <img
-                    src="https://progress-garden.az/assets/img/icons/all.png"
-                    alt="Suvarma sistemi"
-                    width="24px"
-                    height="24px"
+                    src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/fuel-pump-fill.svg"
+                    alt="Бензиновый инструмент"
+                    width="24"
+                    height="24"
+                    class="filter-list-icon"
                   />
+                  <span>Бензиновый инструмент</span>
                 </li>
               </ul>
             </div>
@@ -620,7 +772,13 @@
             <div class="col-12 col-lg-6">
               <div class="section-description">
                 <p>
-                  Наша цель — предоставить клиентам качественную садовую, лесную и сельскохозяйственную технику, а также системы полива по доступным ценам. Мы предлагаем не только продажу, но и профессиональную установку, сервисное обслуживание и техническую поддержку.
+                  Компания «Быт Под Контролем» специализируется на ремонте и
+                  обслуживании электро- и бензоинструмента, строительного
+                  оборудования, пневмоинструмента, станков, садовой и бензиновой
+                  техники. Параллельно мы выполняем бытовые и строительные
+                  услуги: ремонт бытовой техники, сборку и изготовление мебели,
+                  сантехнику, электромонтаж, ремонт квартир и помещений,
+                  укладку плитки и керамогранита, а также клининг.
                 </p>
               </div>
             </div>
@@ -678,44 +836,53 @@
                   <li class="">
                    <figure class="aboutAdvantagesFigure">
                     <img src="https://progress-garden.az/assets/img/icons/list.webp" alt="list icons">
-                    <h5>40+ категорий</h5>
+                    <h5>Шесть направлений техники</h5>
                    </figure>
                    <article class="aboutAdvantagesArticle">
                        <p>
-                        Мы предлагаем широкий выбор садовой, лесной и сельскохозяйственной техники, позволяя каждому клиенту быстро найти необходимое оборудование для любых задач.
+                        Ремонтируем электроинструмент, строительное оборудование,
+                        пневмоинструмент, станки, садовый и бензиновый
+                        инструмент — единая точка для сервиса профессиональной и
+                        домашней техники.
                         </p>
                    </article>
                   </li>
                   <li>
                   <figure class="aboutAdvantagesFigure">
                     <img src="https://progress-garden.az/assets/img/icons/11826667.webp" alt="mehsul">
-                    <h5>Широкий ассортимент товаров</h5>
+                    <h5>Ремонт быта и сада</h5>
                     </figure>
                   <article class="aboutAdvantagesArticle">  
                     <p>
-                      В нашем каталоге представлены современные инструменты и техника для сада и хозяйства, отличающиеся надежностью, качеством и удобством использования.
+                      Восстанавливаем бытовую технику и садовое оборудование,
+                      включая бензоинструмент: диагностика, подбор запчастей,
+                      настройка и профилактика.
                     </p>
                     </article>
                   </li>
                   <li>
                    <figure class="aboutAdvantagesFigure">
                     <img src="https://progress-garden.az/assets/img/icons/brand-image.webp" alt="8 Brend">
-                    <h5>8+ брендов</h5>
+                    <h5>Отделка и инженерия в помещении</h5>
                    </figure>
                    <article class="aboutAdvantagesArticle">
                    <p>
-                    Мы сотрудничаем с проверенными производителями, предлагая только качественную продукцию от надежных мировых и локальных брендов.
+                    Ремонт квартир и помещений, укладка плитки и керамогранита,
+                    сантехнические и электромонтажные работы, сборка и
+                    изготовление мебели — комплексно или по отдельным этапам.
                    </p>
                     </article>
                   </li>
                   <li class="activePagination">
                     <figure class="aboutAdvantagesFigure">
                         <img src="https://progress-garden.az/assets/img/icons/elacesid.webp" alt="23 İllik fəaliyyət">
-                        <h5>Более 23 лет опыта</h5>
+                        <h5>Клининг и порядок</h5>
                     </figure>
                    <article class="aboutAdvantagesArticle"> 
                    <p>
-                    Многолетний опыт работы позволяет нам точно понимать потребности клиентов и предлагать оптимальные решения с гарантией качества и сервиса.
+                    Уборка квартир и помещений после ремонта или на регулярной
+                    основе — аккуратно сдаём объект и поддерживаем чистоту там,
+                    где вы живёте или работаете.
                    </p>
                     </article>
                   </li>
@@ -789,14 +956,52 @@
             </div>
           </div>
 
+          <div class="service-item">
+            <img
+              src="/assests/img/service-mebel.jpg"
+              alt="Сборка и изготовление мебели"
+            />
+            <div class="service-content">
+              <h3>Сборка и изготовление мебели</h3>
+              <p>Сборка корпусной и мягкой мебели, ремонт фурнитуры и изготовление по размерам</p>
+              <span>Подробнее <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 492.004 492.004" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M382.678 226.804 163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z" fill="#ffffff" opacity="1" data-original="#000000" class=""></path></g></svg></span>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="">
+            <div class="service-content">
+              <h3>Ремонт квартир и помещений</h3>
+              <p>Косметический и капитальный ремонт жилых и коммерческих помещений под ключ</p>
+              <span>Подробнее <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 492.004 492.004" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M382.678 226.804 163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z" fill="#ffffff" opacity="1" data-original="#000000" class=""></path></g></svg></span>
+            </div>
+          </div>
+
         </div>
 
         </div>
       </section>
       <section class="brends section-padding">
       <div class="container">
-        <div class="section-title">
-          <h6 class="banner">Бренды</h6>
+        <div class="section-top brends__top">
+          <div class="section-title">
+            <h6 class="banner">Бренды</h6>
+          </div>
+          <a href="" class="view-posts-btn open-modal-btn">
+            <span class="btn-text">Посмотреть все</span>
+            <span class="btn-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42s1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1"
+                ></path>
+              </svg>
+            </span>
+          </a>
         </div>
         <div class="row">
           <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
@@ -1499,81 +1704,112 @@
             <div class="footer__main ">
                 <div class="footer__content">
                     <div class="footer__text">
-                        <span>Фактический адрес:</span> <br> 630073, г. Новосибирск, <br> ул. Геодезическая, д. 2/1,
-                        <br> офис 508
-                        (БЦ Геос) <br> <br>
-                        <span>Адрес для отправки корреспонденции:</span> <br> 630087, г. Новосибирск, <br> проспект
-                        Карла Маркса, д. 30, <br> офис 204
+                        <span>«Быт Под Контролем»</span><br>
+                        Демонстрационные контакты для макета сайта.<br><br>
+                        <span>Адрес (выдуманный):</span><br>
+                        125047, г. Москва,<br>
+                        ул. Инструментальная, д. 24, стр. 1, офис 12<br><br>
+                        <span>Часы работы:</span><br>
+                        Пн — Пт: 9:00 — 20:00<br>
+                        Сб: 10:00 — 15:00, Вс — выходной
                     </div>
                     <div class="footer__contacts">
                         <div class="footer__phone">
-                            <a href="tel:+78002226488" title="Телефон компании" rel="nofollow">+7 (999) 222-99-99</a>
+                            <a href="tel:+79035551234" title="Телефон" rel="nofollow">+7 (903) 555-12-34</a>
                         </div>
                         <div class="footer__email">
-                            <a href="mailto:info@ukargos.com" rel="nofollow" title="">info@bpk.com</a>
+                            <a href="mailto:zakaz@bpk-demo.ru" rel="nofollow" title="">zakaz@bpk-demo.ru</a>
                         </div>
+                    </div>
+                    <div class="footer__social">
+                        <a href="" aria-label="Мессенджер"><img src="/assests/img/maxmessencer.png" alt="" /></a>
+                        <a href="" aria-label="Telegram"><img src="/assests/img/telegram.svg" alt="" /></a>
+                        <a href="" aria-label="Viber"><img src="/assests/img/viber.webp" alt="" /></a>
+                        <a href="" aria-label="WhatsApp"><img src="/assests/img/whatsapp.svg" alt="" /></a>
                     </div>
                 </div>
                 <div class="footer__nav">
                     <div class="footer-nav__group">
-                        <a href="" class="footer-nav__title" title="">Компания</a>
+                        <span class="footer-nav__title">Меню</span>
                         <ul class="footer-nav__list">
                             <li class="footer-nav__item">
-                                <a href="/about.html" class="footer-nav__link" title="">О компании</a>
+                                <a href="" class="footer-nav__link">Главная</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a href="/team.html" class="footer-nav__link" title="">Наша команда </a>
+                                <a href="" class="footer-nav__link">Услуги</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a href="/services.html" class="footer-nav__link" title="">Услуги </a>
+                                <a href="" class="footer-nav__link">Категории</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a href="/contact.html" class="footer-nav__link" title="">Контакты</a>
+                                <a href="" class="footer-nav__link">О компании</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">Бренды</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">Новости</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">Контакты</a>
                             </li>
                         </ul>
                     </div>
                     <div class="footer-nav__group">
-                        <a href="" class="footer-nav__title" title="">Навигация</a>
+                        <span class="footer-nav__title">Услуги</span>
                         <ul class="footer-nav__list">
                             <li class="footer-nav__item">
-                                <a href="/reviews.html" class="footer-nav__link" title="">Отзывы клиентов</a>
+                                <a href="" class="footer-nav__link">Ремонт электроинструментов</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a href="/cases.html" class="footer-nav__link" title="">Примеры дел</a>
+                                <a href="" class="footer-nav__link">Ремонт бензоинструментов</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a href="/events.html" class="footer-nav__link" title="">Мероприятия</a>
+                                <a href="" class="footer-nav__link">Ремонт бытовой техники</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a href="/blogs.html" class="footer-nav__link" title="">Блоги</a>
+                                <a href="" class="footer-nav__link">Сборка и изготовление мебели</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">Сантехнические работы</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">Ремонт квартир и помещений</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">Укладка плитки и керамогранита</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">Электромонтажные работы</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">Уборка (клининг)</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">Ремонт садовой техники</a>
                             </li>
                         </ul>
                     </div>
                     <div class="footer-nav__group">
-                        <a href="" class="footer-nav__title" title="">Мероприятия </a>
+                        <span class="footer-nav__title">Категории</span>
                         <ul class="footer-nav__list">
                             <li class="footer-nav__item">
-                                <a href="" class="footer-nav__link" title="">Мероприятия 1</a>
+                                <a href="" class="footer-nav__link">Электроинструмент</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a href="" class="footer-nav__link" title="">Мероприятия 2</a>
+                                <a href="" class="footer-nav__link">Строительное оборудование</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a href="" class="footer-nav__link" title="">Мероприятия 3 </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-nav__group">
-                        <a href="" class="footer-nav__title" title="">Блоги</a>
-                        <ul class="footer-nav__list">
-                            <li class="footer-nav__item">
-                                <a href="" class="footer-nav__link" title="">Блог 1</a>
+                                <a href="" class="footer-nav__link">Пневматический инструмент</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a href="" class="footer-nav__link" title="">Блог 2</a>
+                                <a href="" class="footer-nav__link">Станки</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a href="" class="footer-nav__link" title="">Блог 3</a>
+                                <a href="" class="footer-nav__link">Садовый инструмент</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">Бензиновый инструмент</a>
                             </li>
                         </ul>
                     </div>
@@ -1581,12 +1817,7 @@
             </div>
             <div class="footer__other">
                 <div class="footer__copy">
-                    Copyright © <id id="year"></id>
-                </div>
-                <div class="footer__dev">
-                    <span>Разработка сайта и<br>техническая поддержка —
-                        <a target="_blank" href="https://jeywastudio.com/">JEYWA STUDIO</a>
-                    </span>
+                    Copyright © <span id="year"></span>
                 </div>
             </div>
         </div>
