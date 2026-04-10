@@ -63,3 +63,45 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 )
 document.getElementById("year").textContent = new Date().getFullYear()
+
+let after_width = 90;
+let lastScrollTop = 0;
+
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+
+  const scrollMiddle = window.scrollY + window.innerHeight / 2;
+
+  sections.forEach(section => {
+
+    const top = section.offsetTop;
+    const height = section.offsetHeight;
+
+    if (
+      scrollMiddle >= top &&
+      scrollMiddle <= top + height &&
+      section.id === "discover-us"
+    ) {
+
+      const currentScroll = window.scrollY;
+
+      if (after_width < 100) {
+        if (currentScroll > lastScrollTop) {
+          after_width += 0.2;
+        } else if (currentScroll < lastScrollTop) {
+          after_width -= 0.2;
+        }
+      }
+
+      if (after_width < 90) after_width = 90;
+      if (after_width > 100) after_width = 100;
+
+      document.querySelector(".discover_us_bg").style.width = after_width + "%";
+
+      lastScrollTop = currentScroll;
+    }
+
+  });
+
+});

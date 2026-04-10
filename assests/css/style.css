@@ -744,7 +744,7 @@ a{
 }
 
 .advantages-area {
-    margin-top: 20px
+    margin-top: 20px;
 }
 
 .aboutAdvantagesArticle p,.aboutAdvantagesFigure h5 {
@@ -783,7 +783,8 @@ a{
 
 .discover-us .row {
     row-gap: 20px;
-    align-items: center
+    align-items: center;
+    padding: 0 50px;
 }
 
 .advantages-area .row {
@@ -1222,12 +1223,16 @@ section{
 
 .brends-card img {
     width: 100%;
+    max-width: 160px;
     height: 100%;
     object-fit: contain;
     position: relative;
     z-index: 10
 }
-
+.brends-card svg{
+  width: 160px;
+  height: 90px;
+}
 .mouse-cursor-gradient-tracking::before {
     --size: 0;
     content: '';
